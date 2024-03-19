@@ -1,12 +1,12 @@
 #!/bin/bash
-
-# Check if file argument is provided
+# Set RHOST to your website
+# Run
+# ./runMany.sh ./excellentLinux.txt
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <file>"
     exit 1
 fi
 
-# Check if file exists
 if [ ! -f "$1" ]; then
     echo "File $1 not found."
     exit 1
